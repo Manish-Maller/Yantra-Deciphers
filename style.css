@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-optical-sizing: auto;
+    text-decoration: none;
 }
 
 .header {
@@ -44,7 +45,10 @@
     justify-content: center;
     align-items: center;
 }
-
+.menu-list > li:hover{
+    background-color: black;
+    color: white;
+}
 .image-section {
     height: 100px;
     width: 100px;
@@ -234,9 +238,42 @@ select{
     color: #333;
 }
 footer{
-    height: 400px;
-    max-width: 1360px;
-    background:linear-gradient(to right, white, #333);
+    background: linear-gradient(to right, white, #333);
+}
+.about-company{
+    position: relative;
+}
+.recent-posts{
+    position: absolute;
+    left: 49%;
+    top: 20%;
+    width: 50%;
+    height: 50%;
+    right: 5%;
+}
+.recent-posts > iframe{
+    margin: auto;
+    width: 100%;
+    height: 250px;
+}
+.company > h1, .address > h1{
+    text-align: left;
+    margin: 0.5rem 0;
+}
+.company > p, .address > address{
+    margin: 0 0.5rem;
+}
+.icons > a{
+    color: black;
+    font-size: 2em;
+    margin: 0.5em 0.5em;
+}
+.footer > p{
+    color: aliceblue;
+    background-color: black;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0.2rem 0;
 }
 @media screen and (max-width: 768px) {
     .header {
@@ -274,9 +311,39 @@ footer{
         margin: 1em;
     }
     footer{
-        height: 200px;
-        max-width: 500px;
-        background:linear-gradient(to right, white, #333);
+        background: linear-gradient(to right, white, #333);
+    }
+    .about-company{
+        position: relative;
+    }
+    .recent-posts{
+        position: absolute;
+        left: 0%;
+        top: 90%;
+        width: 100%;
+        height: 50%;
+        right: 5%;
+    }
+    .recent-posts > iframe{
+        margin: auto;
+        width: 100%;
+        height: 250px;
+    }
+    .company > h1, .address > h1{
+        text-align: left;
+        margin: 0.5rem 0;
+    }
+    .company > p, .address > address{
+        margin: 0 0.5rem;
+    }
+    .icons > a{
+        color: black;
+        font-size: 1.5em;
+        margin: 0.5em 0.5em;
+    }
+    .footer{
+        position: absolute;
+        bottom: -55%;
     }
 
 }
