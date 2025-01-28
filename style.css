@@ -1,0 +1,319 @@
+* {
+    font-family: "Jost", serif;
+    margin: 0;
+    padding: 0;
+    font-optical-sizing: auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.second-text {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #4f4f4f;
+}
+
+.heading-section {
+    flex-grow: 1;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.first-text {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #333;
+}
+
+.heading-section>h1 {
+    margin: 0;
+    padding: 0.8em;
+}
+
+.menu-list {
+    /* flex-grow: 1; */
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 0.4em;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section {
+    height: 100px;
+    width: 100px;
+    display: flex;
+}
+
+.image-section>img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.menu-list>li {
+    padding: 0.5em;
+    border: 1px solid black;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-weight: 500;
+    margin: 30px 0;
+}
+
+.hero-section {
+    height: 490px;
+    width: 98.5vw;
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/banner.jpg);
+}
+
+.hero-text>h1 {
+    margin: 60px 0 0 0;
+}
+
+.hero-text>p {
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 2.5rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1em;
+}
+
+.hero-buttons>button {
+    margin: 2em 0;
+    padding: 1em;
+    border: none;
+    font-weight: 700;
+    border-radius: 2em;
+}
+
+.hero-buttons>button:hover {
+    background-color: #333;
+    color: white;
+}
+
+.our-services {
+    margin: 50px 0;
+}
+
+.our-services>h1,
+.internship-section>h1 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.services {
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3em;
+}
+
+.service,
+.development {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.service>img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.internship-types {
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3em;
+
+}
+
+.development>img {
+    height: 100px;
+    width: 100px;
+}
+
+.services>img:hover,
+.internship-types>img:hover {
+    transform: scale(1.1);
+
+}
+
+.about-section {
+    background: linear-gradient(to right, white, lightgrey);
+}
+
+.about-section>h1 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.about-summary {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 50px 0;
+    gap: 1em;
+    line-height: 2em;
+}
+
+.about-text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.about-logo {
+    display: grid;
+    place-items: center;
+}
+
+.about-logo>img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.contact-section {
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    gap: 1em;
+}
+
+.form {
+    display: flex;
+    width: 500px;
+    height: auto;
+    flex-direction: column;
+    gap: 1em;
+}
+
+input,
+select,
+textarea {
+    padding: 1em;
+    margin: 0.5em 0;
+    border: 1px solid #333;
+    border-radius: 0.5em;
+}
+
+input:placeholder-shown,
+select:placeholder-shown,
+textarea:placeholder-shown {
+    color: #333;
+    margin: 0 0.5em;
+}
+
+.button-forms {
+    padding: 1em;
+    border: none;
+    border-radius: 0.5em;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.submit-button {
+    background-color: #333;
+    width: 100px;
+    padding: 0.5em;
+    color: white;
+}
+
+select {
+    width: 490px;
+    margin-left: 4px;
+
+}
+
+.reset-button {
+    background-color: white;
+    width: 100px;
+    padding: 0.5em;
+    color: #333;
+}
+
+footer {
+    height: 400px;
+    max-width: 1360px;
+    background: linear-gradient(to right, white, #333);
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .hero-text>h1,
+    .hero-text>p {
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .menu-list {
+        display: none;
+    }
+
+    .services,
+    .internship-types {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3em;
+    }
+
+    .form {
+        width: 300px;
+    }
+
+    select {
+        width: 290px;
+        margin-left: 4px;
+
+    }
+
+    .about-text {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .development,
+    .services,
+    .about-summary {
+        margin: 1em;
+    }
+
+    footer {
+        height: 200px;
+        max-width: 500px;
+        background: linear-gradient(to right, white, #333);
+    }
+
+}
